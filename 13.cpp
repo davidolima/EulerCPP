@@ -104,14 +104,6 @@ const array<string, 100> arr = {"37107287533902102798797998220837590246510135740
 "20849603980134001723930671666823555245252804609722",
 "53503534226472524250874054075591789781264330331690"};
 
-string repetirString (string str, int n){
-    string resultado = "";
-    for (int i = 0; i <= n; i++){
-        resultado += str;
-    }
-    return resultado;
-}
-
 int charParaInt(char inpt){
     return (int) inpt - 48;
 }
