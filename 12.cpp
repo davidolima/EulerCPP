@@ -41,7 +41,7 @@ int main (){
     while (numeroDivisores(calcularNumeroTriangular(i)) < META){
         i++;
     }
-    std::cout << i << "o número, " << calcularNumeroTriangular(i) << ", com " << numeroDivisores(calcularnumerotriangular(i)) << " divisores" ;
+    std::cout << i << "o número, " << calcularNumeroTriangular(i) << ", com " << numeroDivisores(calcularNumeroTriangular(i)) << " divisores" ;
     return 0;
 }
 
