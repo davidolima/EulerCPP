@@ -143,6 +143,7 @@ string somarNumerosGrandes(string x, string y) {
             hold = 0;
         }
 
+        // Se o resultado da soma for maior que 10, atribuir dezena à variável hold.
         if (num > 9 and i == 0){
             resultado = to_string(num) + resultado;
         } else if (num > 9) {
@@ -154,22 +155,7 @@ string somarNumerosGrandes(string x, string y) {
         }
         
     }
-    // Se x for maior que y, adicionar números que não precisaram ser somados.
-    string compensar = "";
-    if (x.length() >= y.length()){
-        for (int i = x.length() - y.length() - 1; i >= 0; i--){
-            compensar += x[i];
-        }
 
-        if (hold) {
-            somarNumerosGrandes("1", compensar);
-        }        
-        
-        // cout << "Resultado: " << resultado << '\n';
-        // cout << "Compensar: " << compensar << '\n';
-        resultado = compensar + resultado;
-    }
-    
     return resultado;
 }
 
